@@ -1,0 +1,12 @@
+.hero-copy,.portrait-card{position:relative;z-index:2}
+.hero-links{flex-wrap:wrap;gap:10px}
+.hero-links .github-link{background:#fff;color:var(--navy);border-color:#fff}
+.hero-links .github-link span{display:inline-grid;place-items:center;width:22px;height:22px;margin:-6px 7px -6px -10px;border-radius:50%;background:var(--navy);color:#fff;font-size:8px}
+.hero-links .advisor-link{border-color:#83a7ff;color:#dce6ff}
+.portrait-card{height:440px;margin:0;padding:14px;background:#fff;box-shadow:20px 20px 0 rgba(0,0,0,.12)}
+.portrait-card img{width:100%;height:100%;display:block;object-fit:cover;object-position:center 20%}
+.portrait-card figcaption{position:absolute;left:14px;right:14px;bottom:14px;padding:17px 19px;display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(19,40,76,.92);backdrop-filter:blur(8px)}
+.portrait-card figcaption strong{font-size:18px}
+.portrait-card figcaption span{color:#cdd9ee;font:9px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em}
+@media(max-width:850px){.portrait-card{width:min(360px,100%);height:430px}}
+@media(max-width:580px){.portrait-card{height:390px}.hero-links a{width:100%;text-align:center}}
