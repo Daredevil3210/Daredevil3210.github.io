@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" fill="none">
+  <title>检索与智能体工作流的连接路径</title>
+  <desc>以资料汇入检索、检索连接工具分支的过程为灵感绘制的背景图案。</desc>
+  <g stroke="#d7e3ec" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M48 74h72c36 0 48 28 48 64v54c0 30 20 48 52 48h52"/>
+    <path d="M12 178h80c42 0 44 62 86 62h94"/>
+    <path d="M46 408h74c36 0 48-28 48-64v-56c0-30 20-48 52-48"/>
+    <path d="M272 240h38c38 0 54-20 54-58v-64c0-38 22-58 60-58h76"/>
+    <path d="M272 240h202"/>
+    <path d="M272 240h38c38 0 54 20 54 58v64c0 38 22 58 60 58h76"/>
+    <path d="M364 118c0-26-18-44-44-44h-24"/>
+    <path d="M364 362c0 26-18 44-44 44h-24"/>
+  </g>
+  <g fill="#c0d3e3">
+    <circle cx="48" cy="74" r="7"/><circle cx="12" cy="178" r="7"/>
+    <circle cx="46" cy="408" r="7"/><circle cx="296" cy="74" r="7"/>
+    <circle cx="296" cy="406" r="7"/><circle cx="500" cy="60" r="7"/>
+    <circle cx="474" cy="240" r="7"/><circle cx="500" cy="420" r="7"/>
+  </g>
+  <circle cx="272" cy="240" r="22" fill="#e4edf4"/>
+  <circle cx="272" cy="240" r="8" fill="#adc6da"/>
+</svg>
