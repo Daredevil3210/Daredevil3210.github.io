@@ -1,21 +1,4 @@
 (() => {
-  // Only pin the profile when its entire content fits below the header.
-  const profile = document.querySelector('.profile');
-  const header = document.querySelector('.site-header');
-  if (profile && header && 'ResizeObserver' in window) {
-    const fitProfile = () => {
-      const top = Math.max(100, header.getBoundingClientRect().height + 8);
-      profile.style.top = `${top}px`;
-      profile.toggleAttribute('data-sticky', window.innerWidth > 960 &&
-        profile.getBoundingClientRect().height + top + 16 <= window.innerHeight);
-    };
-    const sizeObserver = new ResizeObserver(fitProfile);
-    sizeObserver.observe(profile);
-    sizeObserver.observe(header);
-    window.addEventListener('resize', fitProfile);
-    fitProfile();
-  }
-
   const controls = document.querySelector('.project-filters');
   const projects = [...document.querySelectorAll('[data-project]')];
   const status = document.getElementById('project-status');
