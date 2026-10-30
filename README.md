@@ -1,60 +1,71 @@
-# 崔学成 · 个人学术主页
+# Cui Xuecheng · Academic Homepage
 
-东北大学计算机技术专业硕士研究生的个人网站，记录教育背景、项目经历、荣誉奖项与证书。
+**English** | [简体中文](README.zh.md)
 
-**在线访问：[daredevil3210.github.io](https://daredevil3210.github.io/)**
+A personal academic website for Cui Xuecheng, a master's student in Computer Technology at Northeastern University. It presents education, project experience, honors, and certificates.
 
-## 内容
+**Live website:** [daredevil3210.github.io](https://daredevil3210.github.io/)
 
-- 个人介绍、邮箱、GitHub 与硕士生导师链接
-- 教育经历、学业成绩及主要课程
-- 4 个精选项目：MailFlow 邮件智能体、Agentic RAG 个人知识库、ERNIE 文献语义检索、多目标短视频推荐
-- 按 Agent、RAG、检索与推荐筛选项目，以及 Agent Loop、LangGraph、Transformer 学习资源
-- 荣誉奖项及 12 张可查看完整大图的证书
+## Content
 
-## 技术与设计
+- Personal introduction, contact details, GitHub profile, and supervisor link.
+- Education history, academic results, and selected coursework.
+- Four featured projects: MailFlow email agent, Agentic RAG knowledge base, ERNIE literature search, and multi-objective video recommendation.
+- Project filtering by Agent, RAG, and retrieval/recommendation, plus links to Agent Loop, LangGraph, and Transformer learning resources.
+- Honors and twelve certificates with links to full-size images.
 
-使用原生 HTML、CSS 和 JavaScript 构建，通过 GitHub Pages 发布，无需安装前端依赖或运行构建命令。首屏左侧为身份和「关于我」，右侧为照片，导师与联系方式集中在简介下方；正文采用最大 1040px 的居中阅读区域，简介另限制行宽。教育经历先本科后硕士，项目采用双栏，手机切换为单栏。正文 16px，章节标题 28px，姓名在手机为 32px、桌面为 40px。
+## Implementation
 
-项目筛选支持键盘操作；禁用 JavaScript 时仍显示全部项目。证书使用 WebP 格式并延迟加载，默认展示 4 张，其余 8 张通过原生折叠区域展开，图片保持完整比例。页面支持键盘焦点提示和减少动态效果偏好。
+Built with plain HTML, CSS, and JavaScript and published through GitHub Pages. No frontend dependency installation or build step is required.
 
-首屏采用浅蓝底色与原创检索路径图案，图案集中在照片周围，正文区域保持清晰。个人照片以 4:5 比例显示，桌面图像宽 180px，手机自适应缩小；原始照片文件保留不变。
+The desktop header places the introduction beside a portrait. The main reading area has a maximum width of 1040px; the introduction uses a narrower line length. Education is ordered from undergraduate to postgraduate study. Project cards use two columns on desktop and one on mobile. Body text is 16px, section headings are 28px, and the name scales from 32px on mobile to 40px on desktop.
 
-## 文件说明
+Project filters use keyboard-accessible buttons; all projects remain visible when JavaScript is disabled. Certificate images use WebP and lazy loading, preserve their full aspect ratios, and show four items initially with eight more in an expandable section. Focus indicators and reduced-motion preferences are supported.
 
-- `index.html`：页面内容、导航与证书链接。
-- `styles.css`：配色、布局及响应式样式。
-- `script.js`：项目筛选、状态提示和渐进增强的进入动画。
-- `portrait-clear.webp`：主页个人照片。
-- `research-paths.svg`：以资料检索与工具分支为灵感绘制的首屏背景。
-- `innovation-scholarship.webp`：创新创业奖学金证书，2026-09-11 从新版证书 PDF 更新。
-- 其余 `.webp` 文件：其他证书或历史照片素材。
-- `LICENSE`：MIT 许可证。
+The header uses a light blue background and an original retrieval-path illustration around the portrait. The portrait is displayed at a 4:5 ratio, with a desktop width of 180px and responsive sizing on mobile. Original photo assets are retained.
 
-## 本地预览
+## Repository contents
 
-可以直接用浏览器打开 `index.html`，也可以在仓库目录启动静态服务器（需安装 Python 3）：
+- [index.html](index.html): page content, navigation, and certificate links.
+- [styles.css](styles.css): colors, layout, and responsive styling.
+- [script.js](script.js): project filtering, status messages, and progressive entrance animations.
+- [portrait-clear.webp](portrait-clear.webp): the displayed portrait.
+- [research-paths.svg](research-paths.svg): the header background illustration.
+- [innovation-scholarship.webp](innovation-scholarship.webp): the scholarship certificate updated from its replacement PDF on 2026-09-11.
+- Other `.webp` files: certificates and earlier portrait assets.
+- [LICENSE](LICENSE): MIT software license.
+
+## Local preview
+
+Clone the repository and open `index.html` in a browser:
+
+```sh
+git clone https://github.com/Daredevil3210/Daredevil3210.github.io.git
+cd Daredevil3210.github.io
+```
+
+Alternatively, with Python 3 installed, serve the repository locally:
 
 ```sh
 python -m http.server 8000
 ```
 
-随后访问 [localhost:8000](http://localhost:8000)。
+Open [localhost:8000](http://localhost:8000). This command is a preview server, not an automated test suite.
 
-## 更新与发布
+## Maintenance and publishing
 
-1. 修改 `index.html` 中对应的个人信息、项目或荣誉条目。
-2. 修改 `styles.css` 调整页面样式。
-3. 修改项目时同步维护 `data-category`（`agent`、`rag` 或 `retrieval`）、筛选提示中的数量和仓库链接。项目介绍应以公开仓库实际实现为准。
-4. 替换证书时保持文件名与页面链接一致；修改样式或脚本后更新引用中的版本参数以刷新缓存。
-5. 预览桌面和手机布局，检查筛选、图片、链接及无脚本浏览后，将修改推送至 `main` 分支。
-6. GitHub Pages 从 `main` 分支的仓库根目录自动发布，可在仓库的 Actions 或 Settings → Pages 查看发布结果。
+1. Update personal information, projects, and honors in `index.html`.
+2. Adjust visual styling in `styles.css`.
+3. Keep project `data-category` values (`agent`, `rag`, or `retrieval`), filter status counts, and repository links consistent. Describe projects according to their public implementations.
+4. Keep certificate filenames and links synchronized. Refresh stylesheet/script version query parameters after changing those files.
+5. Preview desktop and mobile layouts; check filtering, images, links, and browsing with JavaScript disabled. Push the changes to `main`.
+6. GitHub Pages publishes from the repository root on `main`. Inspect publishing status in Actions or Settings → Pages.
 
-## 许可与内容使用
+## License and personal content
 
-网站源代码使用 [MIT License](LICENSE)。个人照片、证书和相关身份信息不属于可复用的软件素材；这些内容及证书中第三方标识的权利归各自权利人所有，MIT 软件许可不授予其使用权。
+Website source code is distributed under the [MIT License](LICENSE). Personal photographs, certificates, identity information, and third-party marks are not reusable software assets. Their rights remain with their respective owners; the software license does not grant rights to use them.
 
-## 联系
+## Contact
 
-- 邮箱：[cuixc@mails.neu.edu.cn](mailto:cuixc@mails.neu.edu.cn)
-- GitHub：[Daredevil3210](https://github.com/Daredevil3210)
+- Email: [cuixc@mails.neu.edu.cn](mailto:cuixc@mails.neu.edu.cn)
+- GitHub: [Daredevil3210](https://github.com/Daredevil3210)
